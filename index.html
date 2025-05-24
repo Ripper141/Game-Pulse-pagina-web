@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Game Pulse</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <img class="logo" src="./assets/img/logo.png" alt="Logo de Game Pulse" />
+            <h1>Game Pulse</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <h2>Bienvenido a Game Pulse</h2>
+        <form action="#">
+            <input type="text" placeholder="Buscar productos..." />
+            <button>Buscar</button>
+        </form>
+    </main>
+
+
+    <section id="productos">
+        <h2>Productos</h2>
+
+        <div class="cards-container">
+            <div class="card">
+                <h3>VE MAD R Major Wireless Mouse</h3>
+                <img class="img-mouse" src="./assets/img/mouse.jpg" alt="Mouse Gamer" />
+                <p>El VXE MAD R Major es un mouse gaming inalámbrico ultraligero.</p>
+                <p>Precio $105.999</p>
+                <button>Añadir al Carrito</button>
+            </div>
+
+            <div class="card">
+                <h3>TECLADO GAMER RAZER BLACKWIDOW V3</h3>
+                <img src="./assets/img/teclado.jpg" alt="Teclado Gamer" />
+                <p>Teclado retroiluminado con switches rojos.</p>
+                <p>Precio $172.000</p>
+                <button>Añadir al Carrito</button>
+            </div>
+
+            <div class="card">
+                <h3>Auriculares gamer inalámbricos HyperX Cloud III Wireless Black/Red</h3>
+                <img src="./assets/img/auricular.jpg" alt="Auricular Gamer" />
+                <p>Auricular con micrófono y sonido envolvente.</p>
+                <p>Precio $9.999</p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="reseñas">
+        <h2>Reseñas</h2>
+        <div class="reviews-grid">
+            <div class="review">“Excelente calidad y envío rápido.” – Juan.</div>
+            <div class="review">“Muy buenos precios y atención.” – Carla D.</div>
+            <div class="review">“Compré un kit que incluia mouse y teclado , todo funciona perfecto.” – Leo R.</div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/tu_id_aqui" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+            <input type="email" name="email" placeholder="Tu correo electrónico" required />
+            <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Game Pulse. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
