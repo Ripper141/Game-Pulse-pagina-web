@@ -177,7 +177,6 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
 form {
     display: flex;
     flex-direction: column;
@@ -207,4 +206,84 @@ form button {
 
 form button:hover {
     background-color: #ccc;
+}
+
+
+#contador-carrito {
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+
+#carrito-section {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    width: 350px;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    z-index: 1000;
+    display: none;
+}
+
+#carrito-section h2 {
+    margin-bottom: 1rem;
+}
+
+.carrito-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.carrito-item label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.carrito-item input[type=number] {
+    width: 60px;
+    padding: 0.25rem;
+}
+
+.btn-eliminar {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: darkred;
+}
+
+#btn-mostrar-carrito {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#btn-mostrar-carrito:hover {
+    background-color: #555;
 }
